@@ -67,8 +67,6 @@ Alternatively, open `pom.xml` in IntelliJ IDEA, select JDK 21 and run `Project3_
 
 Local verification: **49 Java files compiled with JDK 21**, and the application opened to the main menu on Windows. The build workflow checks compilation; it does not certify gameplay. See the dated [validation record](docs/VALIDATION.md) and the manual [playtest checklist](docs/PLAYTEST_CHECKLIST.md) for the exact evidence and remaining checks.
 
-The original `EGCO213-Project-main.zip` remains available for provenance and bundled media. Java sources are also exposed directly in `src/` so reviewers can inspect them without downloading the archive. Build output, restored media, IDE settings and `.sav` files are excluded from new commits.
-
 Known limitations include fixed-size UI, filesystem-relative resources and Java-serialized save files. Use save files created locally by this game. Standalone JAR packaging and cross-platform gameplay have not been verified.
 
 ## Team and assets
