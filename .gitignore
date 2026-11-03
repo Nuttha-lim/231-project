@@ -1,0 +1,16 @@
+# Local build output, editor state and game saves
+/target/
+/.idea/
+/.vscode/
+*.iml
+*.class
+*.sav
+.DS_Store
+Thumbs.db
+.env
+.env.*
+
+# Original media stays in the checked-in archive; prepare-assets.ps1 restores it.
+/src/main/java/Project3_6713120/resource/**
+!/src/main/java/Project3_6713120/resource/fonts.java
+/src/main/java/Project3_6713120/fonts/
