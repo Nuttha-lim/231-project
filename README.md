@@ -1,5 +1,7 @@
 # CO Valley
 
+[![Java build](https://github.com/Nuttha-lim/co-valley/actions/workflows/build.yml/badge.svg)](https://github.com/Nuttha-lim/co-valley/actions/workflows/build.yml)
+
 A desktop farming simulation developed by a five-person team using Java 21 and Java Swing. Players explore connected maps, grow crops, manage an inventory, trade items and save their progress.
 
 [ภาษาไทย](docs/README_TH.md) · [Architecture](docs/ARCHITECTURE.md) · [Gameplay test plan](docs/PLAYTEST_CHECKLIST.md) · [Credits](CREDITS.md)
@@ -11,6 +13,17 @@ A desktop farming simulation developed by a five-person team using Java 21 and J
 ## My contribution
 
 I designed the game interface and implemented four-direction character movement, directional animations, fence collision and map transitions. I also carried out gameplay testing.
+
+## Review my work
+
+| Area | Source and evidence |
+| --- | --- |
+| Player movement and direction | [Player.java](src/main/java/Project3_6713120/world/Player.java) |
+| Directional animation and sprite rendering | [PlayerLabel.java](src/main/java/Project3_6713120/ui/PlayerLabel.java) |
+| Map collision and transitions | [PlayableScene.java](src/main/java/Project3_6713120/ui/PlayableScene.java), [TransitionObject.java](src/main/java/Project3_6713120/ui/TransitionObject.java) |
+| Build and testing scope | [Recorded build/startup results](docs/VALIDATION.md), [12 planned gameplay cases](docs/PLAYTEST_CHECKLIST.md) |
+
+These references point into the shared team codebase. The contribution summary above describes my role.
 
 ## Features
 
