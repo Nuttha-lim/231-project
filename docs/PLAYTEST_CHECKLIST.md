@@ -1,6 +1,6 @@
 # Gameplay test checklist
 
-This is a reproducible manual test plan, not a record of passing tests. Record the game commit, JDK, operating system, steps, expected result, actual result and evidence for each execution. Use a fresh test save slot.
+Use a fresh save slot for these manual tests. Record the commit, JDK, operating system, actual result and evidence for each case. Execution results are pending.
 
 | ID | Scenario | Expected result |
 | --- | --- | --- |
@@ -17,4 +17,4 @@ This is a reproducible manual test plan, not a record of passing tests. Record t
 | SAVE-02 | Open an empty slot | Clear recovery path without a crash |
 | AUDIO-01 | Change music settings and navigate scenes | Setting and playback remain consistent |
 
-For a defect, capture a screenshot or short video and include reproduction steps, expected/actual behavior, frequency, severity and the save slot used. Keep real playtest findings separate from this unexecuted plan.
+For each defect, record reproduction steps, expected and actual behavior, frequency, severity and the save slot used. Attach a screenshot or short video.

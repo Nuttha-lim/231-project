@@ -1,16 +1,16 @@
 # CO Valley
 
-A desktop farming simulation built with **Java 21 and Java Swing** as a five-person academic project. Players explore connected maps, grow crops, manage an inventory, trade items and save their progress.
+A desktop farming simulation developed by a five-person team using Java 21 and Java Swing. Players explore connected maps, grow crops, manage an inventory, trade items and save their progress.
 
-[ภาษาไทย](docs/README_TH.md) · [Architecture](docs/ARCHITECTURE.md) · [Gameplay checks](docs/PLAYTEST_CHECKLIST.md) · [Credits](CREDITS.md)
+[ภาษาไทย](docs/README_TH.md) · [Architecture](docs/ARCHITECTURE.md) · [Gameplay test plan](docs/PLAYTEST_CHECKLIST.md) · [Credits](CREDITS.md)
 
 ![CO Valley running locally on Windows, showing the main menu](docs/screenshots/main-menu.png)
 
-*Main menu captured from the Java application on Windows, 3 November 2026.*
+*CO Valley main menu on Windows.*
 
 ## My contribution
 
-**Nuttha Limkhhunthammo** — game UX/UI design, four-direction character movement and directional animations, movement blocking at fences, transitions between maps, and gameplay testing. The game is a team project; inventory, farming, shops and persistence are described below as project features.
+I designed the game interface and implemented four-direction character movement, directional animations, fence collision and map transitions. I also carried out gameplay testing.
 
 ## Features
 
@@ -23,7 +23,7 @@ A desktop farming simulation built with **Java 21 and Java Swing** as a five-per
 
 ## Run locally
 
-**Requirements:** Windows, JDK 21 (`java` and `javac` on PATH), and PowerShell. The game uses a 1366 × 768 play area; allow extra screen space for the window frame.
+Install JDK 21 and make sure `java` and `javac` are on PATH. Run the following commands in PowerShell on Windows. The game uses a 1366 × 768 play area, with additional space needed for the window frame.
 
 ```powershell
 git clone https://github.com/Nuttha-lim/co-valley.git
@@ -31,7 +31,7 @@ cd co-valley
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\run.ps1
 ```
 
-The script restores bundled images, fonts and audio from the original ZIP, compiles the Java sources, and starts the game from the repository root. It preserves existing restored assets. No separate Java libraries or database are required.
+The script restores images, fonts and audio from the bundled ZIP, compiles the Java sources and starts the game. Existing restored assets are preserved.
 
 To compile without opening the game:
 
@@ -47,11 +47,11 @@ Alternatively, open `pom.xml` in IntelliJ IDEA, select JDK 21 and run `Project3_
 | --- | --- |
 | W / A / S / D | Move up / left / down / right |
 | E | Interact with the nearby object or plot |
-| 1–6 | Select a hotbar slot |
+| 1 to 6 | Select a hotbar slot |
 | Tab | Toggle inventory during gameplay |
 | Esc | Close inventory or open/exit scene options |
 
-## Code tour
+## Source structure
 
 | Path | Responsibility |
 | --- | --- |
@@ -63,12 +63,12 @@ Alternatively, open `pom.xml` in IntelliJ IDEA, select JDK 21 and run `Project3_
 | `items/` | Item, tool, seed, crop and produce models |
 | `data/` | Game data, save snapshots and file persistence |
 
-## Validation and scope
+## Build and testing
 
-Local verification: **49 Java files compiled with JDK 21**, and the application opened to the main menu on Windows. The build workflow checks compilation; it does not certify gameplay. See the dated [validation record](docs/VALIDATION.md) and the manual [playtest checklist](docs/PLAYTEST_CHECKLIST.md) for the exact evidence and remaining checks.
+All 49 Java source files compile with JDK 21. The application has also been checked through startup to the main menu on Windows. GitHub Actions runs the compilation check on Windows.
 
-Known limitations include fixed-size UI, filesystem-relative resources and Java-serialized save files. Use save files created locally by this game. Standalone JAR packaging and cross-platform gameplay have not been verified.
+See the [build results](docs/VALIDATION.md) and [manual gameplay test plan](docs/PLAYTEST_CHECKLIST.md) for further details.
 
-## Team and assets
+## Team
 
-See [CREDITS.md](CREDITS.md) for the original team attribution. The archive does not include a project-wide license or a complete media attribution record; no new license is assigned by this documentation update.
+The full development team is listed in [CREDITS.md](CREDITS.md).
