@@ -26,8 +26,8 @@ A desktop farming simulation built with **Java 21 and Java Swing** as a five-per
 **Requirements:** Windows, JDK 21 (`java` and `javac` on PATH), and PowerShell. The game uses a 1366 × 768 play area; allow extra screen space for the window frame.
 
 ```powershell
-git clone https://github.com/Nuttha-lim/231-project.git
-cd 231-project
+git clone https://github.com/Nuttha-lim/co-valley.git
+cd co-valley
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\run.ps1
 ```
 
